@@ -17,11 +17,7 @@ let HEIGHT:CGFloat = UIScreen.main.bounds.height
 let  themeColor = UIColor.init(red: 9/255.0, green: 169/255.0, blue: 159/255.0, alpha: 1.0)
 let  bgColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
 class Configuration{
-<<<<<<< HEAD
-    static let instructions = MusicInstructions()
-=======
-    static let instructions = TabInstructions()
->>>>>>> bb2f617897bff2c12c21e100ba3979051a80a109
+static let instructions = TabInstructions()
     
     func getTabBar() -> UIViewController{
         let tab = BaseTabBarController()

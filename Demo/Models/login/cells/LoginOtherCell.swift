@@ -27,12 +27,11 @@ class LoginOtherCell: UITableViewCell {
         
         label.snp.makeConstraints { (make) in
             
-            make.top.equalTo(0)
+            make.top.equalTo(12)
             make.left.equalTo(0)
             make.right.equalTo(0)
             
         }
-        
         
         
     }

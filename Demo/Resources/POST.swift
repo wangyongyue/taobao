@@ -21,7 +21,7 @@ class POST: NSObject {
 
             //虚假延迟1秒
             Alert.loading()
-            DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
                 Alert.dissmiss()
                 http.POSTHttpWithData(http, "data")
             }

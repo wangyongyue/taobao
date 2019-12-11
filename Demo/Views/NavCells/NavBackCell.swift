@@ -69,6 +69,9 @@ class NavBackCell: UITableViewCell {
 class NavBackCellModel:VueData{
     
     var name:String?
-  
+  override func v_height() -> CGFloat {
+
+      return 40
+  }
 }
 

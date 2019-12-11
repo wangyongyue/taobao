@@ -13,32 +13,39 @@ class TabInstructions: Configuration {
     override init() {
         super.init()
         
-        Vue.register(aClass: MusicHomeCellModel.classForCoder(), toClass: MusicHomeCell.classForCoder())
-        Vue.register(aClass: MusicRecommendCellModel.classForCoder(), toClass: MusicRecommendCell.classForCoder())
-        Vue.register(aClass: MusicDynamicCellModel.classForCoder(), toClass: MusicDynamicCell.classForCoder())
-        Vue.register(aClass: MusicMineCellModel.classForCoder(), toClass: MusicMineCell.classForCoder())
+       
+        Vue.register(aClass: Nav101Model.classForCoder(), toClass: Nav101.classForCoder())
+        Vue.register(aClass: Nav102Model.classForCoder(), toClass: Nav102.classForCoder())
+        Vue.register(aClass: Nav103Model.classForCoder(), toClass: Nav103.classForCoder())
+
+       
         
-        Vue.register(aClass: MusicHomeNavCellModel.classForCoder(), toClass: MusicHomeNavCell.classForCoder())
-        Vue.register(aClass: MusicRecommendNavCellModel.classForCoder(), toClass: MusicRecommendNavCell.classForCoder())
-        Vue.register(aClass: MusicDynamicNavCellModel.classForCoder(), toClass: MusicDynamicNavCell.classForCoder())
-        Vue.register(aClass: MusicMineNavCellModel.classForCoder(), toClass: MusicMineNavCell.classForCoder())
+        Vue.register(aClass: Content101Model.classForCoder(), toClass: Content101.classForCoder())
+        Vue.register(aClass: Content102Model.classForCoder(), toClass: Content102.classForCoder())
+        Vue.register(aClass: Content103Model.classForCoder(), toClass: Content103.classForCoder())
+        Vue.register(aClass: Content104Model.classForCoder(), toClass: Content104.classForCoder())
+        Vue.register(aClass: Content105Model.classForCoder(), toClass: Content105.classForCoder())
+        Vue.register(aClass: Content106Model.classForCoder(), toClass: Content106.classForCoder())
+        Vue.register(aClass: Content107Model.classForCoder(), toClass: Content107.classForCoder())
+        
+        Vue.register(aClass: ContentSub101Model.classForCoder(), toClass: ContentSub101.classForCoder())
+        Vue.register(aClass: ContentSub102Model.classForCoder(), toClass: ContentSub102.classForCoder())
+        Vue.register(aClass: ContentSub103Model.classForCoder(), toClass: ContentSub103.classForCoder())
+        Vue.register(aClass: ContentSub104Model.classForCoder(), toClass: ContentSub104.classForCoder())
+        
+        
+        Vue.register(aClass: Content201Model.classForCoder(), toClass: Content201.classForCoder())
+        Vue.register(aClass: Content202Model.classForCoder(), toClass: Content202.classForCoder())
+        Vue.register(aClass: Content203Model.classForCoder(), toClass: Content203.classForCoder())
 
-        Vue.register(aClass: Music101CellModel.classForCoder(), toClass: Music101Cell.classForCoder())
-        Vue.register(aClass: Music101SubCellModel.classForCoder(), toClass: Music101SubCell.classForCoder())
-        Vue.register(aClass: Music102CellModel.classForCoder(), toClass: Music102Cell.classForCoder())
-        Vue.register(aClass: Music102SubCellModel.classForCoder(), toClass: Music102SubCell.classForCoder())
-        Vue.register(aClass: Music103CellModel.classForCoder(), toClass: Music103Cell.classForCoder())
-        Vue.register(aClass: Music104CellModel.classForCoder(), toClass: Music104Cell.classForCoder())
-        Vue.register(aClass: Music105CellModel.classForCoder(), toClass: Music105Cell.classForCoder())
+        Vue.register(aClass: Content301Model.classForCoder(), toClass: Content301.classForCoder())
+        Vue.register(aClass: Content302Model.classForCoder(), toClass: Content302.classForCoder())
+        Vue.register(aClass: Content303Model.classForCoder(), toClass: Content303.classForCoder())
 
-        Vue.register(aClass: MusicHeaderCellModel.classForCoder(), toClass: MusicHeaderCell.classForCoder())
-
-        Vue.register(aClass: Music301CellModel.classForCoder(), toClass: Music301Cell.classForCoder())
-        Vue.register(aClass: Music301SubCellModel.classForCoder(), toClass: Music301SubCell.classForCoder())
-
-        Vue.register(aClass: Music401CellModel.classForCoder(), toClass: Music401Cell.classForCoder())
-        Vue.register(aClass: Music401SubCellModel.classForCoder(), toClass: Music401SubCell.classForCoder())
-        Vue.register(aClass: Music402CellModel.classForCoder(), toClass: Music402Cell.classForCoder())
+        
+        Vue.register(aClass: Setup101Model.classForCoder(), toClass: Setup101.classForCoder())
+        Vue.register(aClass: Setup102Model.classForCoder(), toClass: Setup102.classForCoder())
+        Vue.register(aClass: Setup103Model.classForCoder(), toClass: Setup103.classForCoder())
 
         
     }
@@ -46,9 +53,9 @@ class TabInstructions: Configuration {
     override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()
-        tab.addChildVC(childVC: Tab101().v_viewController(), childTitle: "tab1", image: UIImage.init(named: "music_1"), selectedImage: UIImage.init(named: "music_1"))
-      tab.addChildVC(childVC: Tab102().v_viewController(), childTitle: "tab2", image: UIImage.init(named: "music_2"), selectedImage: UIImage.init(named: "music_2"))
-      tab.addChildVC(childVC: Tab103().v_viewController(), childTitle: "tab3", image: UIImage.init(named: "music_3"), selectedImage: UIImage.init(named: "music_3"))
+        tab.addChildVC(childVC: Tab100().v_viewController(), childTitle: "tab1", image: UIImage.init(named: "home"), selectedImage: UIImage.init(named: "home"))
+      tab.addChildVC(childVC: Tab200().v_viewController(), childTitle: "tab2", image: UIImage.init(named: "message"), selectedImage: UIImage.init(named: "message"))
+      tab.addChildVC(childVC: Tab300().v_viewController(), childTitle: "tab3", image: UIImage.init(named: "mine"), selectedImage: UIImage.init(named: "mine"))
 
       return tab
      }

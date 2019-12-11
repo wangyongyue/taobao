@@ -36,11 +36,11 @@ class Adapter {
     }
     static func topNavigation()-> CGFloat{
         
-        let top = phoneH(iphone5: 44, iphone6: 44, iphoneS: 44, iphoneX: 44+24)
+        let top = phoneH(iphone5: 40, iphone6: 40, iphoneS: 40, iphoneX: 40+24)
 
         return top
-        
     }
+    
     static func topStatus()-> CGFloat{
         
 
