@@ -16,13 +16,16 @@ let HEIGHT:CGFloat = UIScreen.main.bounds.height
 //主体颜色
 let  themeColor = UIColor.init(red: 9/255.0, green: 169/255.0, blue: 159/255.0, alpha: 1.0)
 let  bgColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
-
 class Configuration{
+<<<<<<< HEAD
     static let instructions = MusicInstructions()
+=======
+    static let instructions = TabInstructions()
+>>>>>>> bb2f617897bff2c12c21e100ba3979051a80a109
     
     func getTabBar() -> UIViewController{
         let tab = BaseTabBarController()
-        tab.addChildVC(childVC: Home().v_viewController(), childTitle: "主页", image: Image.home(), selectedImage: Image.home_sel())
+        tab.addChildVC(childVC: Home().v_viewController(), childTitle: "主页", image: UIImage.init(named: "home"), selectedImage: UIImage.init(named: "home"))
         return tab
     }
     func themeColor() -> UIColor{
